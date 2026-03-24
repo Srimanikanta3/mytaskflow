@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Register | My Taskflow</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app-title">My Taskflow</div>
+
+  <main class="page">
+    <div class="container">
+      <div class="panel">
+        <div class="panel-header">
+          <h2>Create your account</h2>
+          <p class="subtitle">Get started with a clean, simple workflow.</p>
+        </div>
+
+        <div class="form-grid">
+          <label class="field">
+            <span class="label">Username</span>
+            <input id="username" placeholder="Your name">
+          </label>
+
+          <label class="field">
+            <span class="label">Email</span>
+            <input id="email" type="email" placeholder="you@example.com">
+          </label>
+
+          <label class="field">
+            <span class="label">Password</span>
+            <input id="password" type="password" placeholder="Create a password">
+          </label>
+
+          <div class="actions">
+            <button type="button" onclick="register()">Register</button>
+            <button type="button" class="secondary" onclick="window.location.href='login.html'">Back to login</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

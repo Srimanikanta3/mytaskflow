@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Add Task | My Taskflow</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app-title">My Taskflow</div>
+
+<main class="page">
+  <div class="container">
+    <div class="panel">
+      <div class="panel-header">
+        <h2>Add Task</h2>
+        <p class="subtitle">Plan it, track it, and finish it.</p>
+      </div>
+
+      <div class="form-grid">
+        <label class="field">
+          <span class="label">Title</span>
+          <input type="text" id="title" placeholder="e.g. Finish assignment">
+        </label>
+
+        <label class="field">
+          <span class="label">Description</span>
+          <textarea id="description" placeholder="Add details (optional)"></textarea>
+        </label>
+
+        <label class="field">
+          <span class="label">Due date</span>
+          <input type="date" id="dueDate">
+        </label>
+
+        <div class="actions">
+          <button type="button" onclick="addTask()">Save</button>
+          <button type="button" class="secondary" onclick="goDashboard()">Back to Dashboard</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>

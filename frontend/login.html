@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login | My Taskflow</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- FULL WIDTH TITLE -->
+<div class="app-title">
+  My Taskflow
+</div>
+
+<main class="page">
+  <div class="container">
+    <div class="panel">
+      <div class="panel-header">
+        <h2>Welcome back</h2>
+        <p class="subtitle">Login to manage your tasks faster.</p>
+      </div>
+
+      <form class="form-grid" onsubmit="login(); return false;">
+        <label class="field">
+          <span class="label">Email</span>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="you@example.com"
+            required
+          >
+        </label>
+
+        <label class="field">
+          <span class="label">Password</span>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Your password"
+            required
+          >
+        </label>
+
+        <div class="field-row">
+          <label class="checkbox-label">
+            <input type="checkbox" onclick="togglePasswordVisibility()">
+            Show password
+          </label>
+        </div>
+
+        <button type="submit">Login</button>
+      </form>
+
+      <div class="actions">
+        <button type="button" class="secondary" onclick="window.location.href='register.html'">
+          Create account
+        </button>
+        <button type="button" class="secondary" onclick="forgotPassword()">
+          Forgot password
+        </button>
+      </div>
+
+      <p class="muted" style="margin: 14px 0 0 0;">
+        Tip: Fill email first, then click “Forgot password”.
+      </p>
+    </div>
+  </div>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>

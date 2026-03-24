@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>View Tasks | My Taskflow</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="loadTasks()">
+
+<div class="app-title">My Taskflow</div>
+
+<main class="page">
+  <div class="container">
+    <div class="panel">
+      <div class="panel-header">
+        <h2>Your Tasks</h2>
+        <p class="subtitle">Keep focus: in-progress on the left, completed on the right.</p>
+      </div>
+
+      <div class="task-columns">
+        <div class="task-column">
+          <h3>In Progress</h3>
+          <div id="inProgressList"></div>
+        </div>
+        <div class="task-column">
+          <h3>Completed</h3>
+          <div id="completedList"></div>
+        </div>
+      </div>
+
+      <button type="button" class="secondary" onclick="goDashboard()">
+        Back to Dashboard
+      </button>
+    </div>
+  </div>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>

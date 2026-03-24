@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard | My Taskflow</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="loadDashboard()">
+  <div class="app-title">My Taskflow</div>
+
+  <main class="page">
+    <div class="container">
+      <div class="panel">
+        <div class="panel-header">
+          <h2>Dashboard</h2>
+          <p class="subtitle">Welcome, <span id="user"></span>. What would you like to do?</p>
+        </div>
+
+        <div class="actions">
+          <button type="button" onclick="goAddTask()">Add Task</button>
+          <button type="button" onclick="goViewTasks()">View Tasks</button>
+        </div>
+
+        <button type="button" class="logout" onclick="logout()">Logout</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
